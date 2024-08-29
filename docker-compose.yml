@@ -22,6 +22,8 @@ services:
     networks:
       - myapp-network
     tty: true
+    command: >
+      sh -c "yarn install && yarn dev"
 
 networks:
   myapp-network:
