@@ -1,9 +1,7 @@
-from fastapi import FastAPI
 from fastapi import FastAPI, Request, Depends, HTTPException, status
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
-from fastapi_pagination import Page, add_pagination, paginate, Params
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
