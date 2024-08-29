@@ -8,17 +8,17 @@ USER node
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the package.json and package-lock.json files
-COPY app/package.json .
+# # Copy the package.json and package-lock.json files
+# COPY app/package.json .
 
-# Install dependencies
-RUN yarn install
+# # Install dependencies
+# RUN yarn install
 
-# Copy the application code
-# COPY app/* .
+# # Copy the application code
+# COPY app .
 
-# Expose the port Vite is running on
-EXPOSE 5173
+# # Expose the port Vite is running on
+# EXPOSE 5173
 
-# Command to start the Vite app
-CMD ["yarn", "dev"]
+# # Command to start the Vite app
+# CMD ["yarn", "dev"]
